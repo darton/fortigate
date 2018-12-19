@@ -26,6 +26,8 @@ config router bgp
     set bestpath-med-missing-as-worst enable
     set network-import-check disable
     set graceful-restart enable
+    set graceful-stalepath-time 180
+    set graceful-update-delay 180
     config neighbor
         edit "172.16.204.125"
             set remote-as 64496
@@ -94,6 +96,4 @@ config router bgp
     end
     config redistribute6 "isis"
     end
-    set graceful-stalepath-time 180
-    set graceful-update-delay 180
 end
