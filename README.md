@@ -1,2 +1,2 @@
-FortiGate BGP configuration to make a multi-homed AS non-transit
+FortiGate BGP configuration to make a multi-homed AS non-transit.
 
