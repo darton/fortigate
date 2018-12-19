@@ -26,11 +26,11 @@ p2p customer router 172.16.6.226/30
 p2p IPv6
 ----
 
-p2p ISP1 2001:db8:0:100::10a/127
+p2p ISP1 2001:db8:0:101::10a/127
 
-p2p customer router 2001:db8:0:100::10b/127
+p2p customer router 2001:db8:0:101::10b/127
 
 
-p2p ISP2 2001:db8:1:100::10a/127
+p2p ISP2 2001:db8:1:102::10a/127
 
-p2p customer router 2001:db8:1:100::10b/127
+p2p customer router 2001:db8:1:102::10b/127
