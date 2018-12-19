@@ -7,6 +7,7 @@ customer PA IPv6 prefix 2001:db8:face::/48
 
 
 IPv4
+----
 
 p2p ISP1 router 172.16.204.125/30
 
@@ -20,7 +21,6 @@ p2p customer router 172.16.6.226/30
 
 
 IPv6
-
 ----
 
 p2p ISP1 2001:db8:0:100::10a/127
