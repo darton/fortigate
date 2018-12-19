@@ -8,16 +8,20 @@ customer PA IPv4 prefix 10.10.180.0/22
 customer PA IPv6 prefix 2001:db8:face::/48
 
 
+ISP's AS numbers
+----
+
+ISP1 AS64496
+
+ISP2 AS64497
 
 p2p IPv4
 ----
-ISP1 AS64496
 
 p2p ISP1 router 172.16.204.125/30
 
 p2p customer router 172.16.204.126/30
 
-ISP2 AS64497
 
 p2p ISP2 router 172.16.6.225/30
 
