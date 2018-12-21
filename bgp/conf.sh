@@ -34,6 +34,7 @@ config router bgp
       config neighbor
         edit "172.16.204.125"
             set activate6 disable
+            set capability-graceful-restart enable
             set remote-as 64496
             set route-map-out "non-transit"
             set send-community6 disable
@@ -44,6 +45,7 @@ config router bgp
         next
         edit "172.16.6.225"
             set activate6 disable
+            set capability-graceful-restart enable
             set remote-as 64497
             set route-map-out "non-transit"
             set send-community6 disable
@@ -54,6 +56,7 @@ config router bgp
         next
         edit "2001:db8:1:101::10a"
             set activate disable
+            set capability-graceful-restart6 enable
             set remote-as 64496
             set route-map-out6 "non-transit"
             set send-community disable
@@ -64,6 +67,7 @@ config router bgp
         next
         edit "2001:db8:2:101::1a"
             set activate disable
+            set capability-graceful-restart6 enable
             set remote-as 64497
             set route-map-out6 "non-transit"
             set send-community disable
