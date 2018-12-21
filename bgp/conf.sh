@@ -30,7 +30,8 @@ config router bgp
     set graceful-restart enable
     set graceful-stalepath-time 180
     set graceful-update-delay 180
-    config neighbor
+    set graceful-restart-time 180
+      config neighbor
         edit "172.16.204.125"
             set activate6 disable
             set remote-as 64496
