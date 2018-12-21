@@ -9,6 +9,7 @@ config router aspath-list
         end
     next
 end
+
 config router route-map
     edit "non-transit"
         config rule
@@ -18,6 +19,7 @@ config router route-map
         end
     next
 end
+
 config router bgp
     set as 65551
     set router-id 10.10.180.254
