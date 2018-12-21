@@ -30,6 +30,7 @@ config router bgp
     set graceful-update-delay 180
     config neighbor
         edit "172.16.204.125"
+            set activate6 disable
             set remote-as 64496
             set route-map-out "non-transit"
             set send-community6 disable
@@ -39,6 +40,7 @@ config router bgp
             set weight 100
         next
         edit "172.16.6.225"
+            set activate6 disable
             set remote-as 64497
             set route-map-out "non-transit"
             set send-community6 disable
@@ -48,6 +50,7 @@ config router bgp
             set weight 200
         next
         edit "2001:db8:1:101::10a"
+            set activate disable
             set remote-as 64496
             set route-map-out6 "non-transit"
             set send-community disable
@@ -57,6 +60,7 @@ config router bgp
             set weight 100
         next
         edit "2001:db8:2:101::1a"
+            set activate disable
             set remote-as 64497
             set route-map-out6 "non-transit"
             set send-community disable
