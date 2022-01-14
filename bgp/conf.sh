@@ -41,7 +41,7 @@ config router bgp
             set keep-alive-timer 45
             set holdtime-timer 120
             set connect-timer 60
-            set weight 100
+            set weight 0
         next
         edit "172.16.6.225"
             set activate6 disable
@@ -52,7 +52,7 @@ config router bgp
             set keep-alive-timer 45
             set holdtime-timer 120
             set connect-timer 60
-            set weight 200
+            set weight 0
         next
         edit "2001:db8:1:101::10a"
             set activate disable
@@ -63,7 +63,7 @@ config router bgp
             set keep-alive-timer 45
             set holdtime-timer 120
             set connect-timer 60
-            set weight 100
+            set weight 0
         next
         edit "2001:db8:2:101::1a"
             set activate disable
@@ -74,7 +74,7 @@ config router bgp
             set keep-alive-timer 45
             set holdtime-timer 120
             set connect-timer 60
-            set weight 200
+            set weight 0
         next
     end
     config network
